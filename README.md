@@ -21,6 +21,7 @@ As far as software packages, you'll need at the very least, the SDCC compiler an
 On my Raspberry Pi running Raspbian:
 
 apt-get install sdcc
+
 (optional if you want serial comms back to the host) apt-get install minicom
 
 git clone http://github.com/vdudouyt/stm8flash
@@ -34,4 +35,4 @@ Optional but extremely useful:
 Saleae Logic Analyzer (About $7 each) -- to see up to 8 channels of digital waveform. EXTREMELY useful for debugging I2C. Seriously...
 PL2303 USB-to-serial cable/converter (about $2 each) -- to be able to "print" from the microcontroller to a minicom terminal
 
-I like to use a Raspberry Pi
+I like to use a Raspberry Pi also with an NRF24L01 to act as server / recipient of the remote sensor data. On the RPi, I can store the data to MySQL database or at the very least, do the "heavy lifting" of converting raw temp/press to calibrated temp/press. 
